@@ -1,0 +1,37 @@
+{
+  "name": "dile-banner",
+  "version": "1.0.0",
+  "description": "Web component to implement a banner with an advertisement, which includes graphic images, text and links.",
+  "main": "index.js",
+  "scripts": {
+    "start": "web-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "start:compatibility": "web-dev-server --app-index demo/index.html --compatibility all --node-resolve --open --watch",
+    "site:build": "npm run storybook:build",
+    "storybook": "start-storybook -p 9001",
+    "storybook:build": "build-storybook -o _site -s storybook-static"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polydile/dile-banner.git"
+  },
+  "keywords": [
+    "banner",
+    "lit-element",
+    "web",
+    "component"
+  ],
+  "author": "@tatianaabril",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Polydile/dile-banner/issues"
+  },
+  "homepage": "https://github.com/Polydile/dile-banner#readme",
+  "dependencies": {
+    "@dile/dile-button": "^3.0.0",
+    "lit-element": "^2.4.0",
+    "lit-html": "^1.0.0"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.10"
+  }
+}
